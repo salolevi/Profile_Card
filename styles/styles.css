@@ -14,16 +14,20 @@ html, body {
 body {
     font-family: 'Kumbh Sans', sans-serif;
     background: var(--dark-cyan);
+    font-size: 18px;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
     overflow: hidden;
+    align-items: center;
+    justify-content: center;
 }
 
 .bg-img-container {
     position: absolute;
     width: 100%;
     height:  100%;
+    z-index: -1;
 }
 
 .bg__img-top {
@@ -59,11 +63,52 @@ body {
     left: calc(50% - 55px);
     border-radius: 50%;
     border: 5px solid white;
+    object-fit: cover;
 }
 
 .profile__info {
     background: white;
     opacity: 1;
+    padding: 65px 25px 0 25px;
+    text-align: center;
+}
+
+.profile__info-victor {
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.profile__location {
+    color: var(--dark-gray);
+    font-weight: 400;
+    margin-bottom: 15px;
+    font-size: .8em;
+}
+
+.profile__info-stats {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    padding: 15px 0 20px 0;
+    border-top: 1px solid var(--dark-gray);
+}
+
+.profile__info-section {
+    margin: 0 25px;
+}
+
+.stat-number {
+    font-weight: 700;
+}
+
+.stat-name  {
+    font-size: .6em;
+    color: var(--dark-gray);
+}
+
+.profile-container {
+    border-radius: 10px;
+    overflow: hidden;
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
